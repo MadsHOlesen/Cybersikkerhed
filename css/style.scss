@@ -17,6 +17,8 @@
 }
 
 body{
+    background-image: url(../img/baggrund.jpg);
+    background-size: 100vw;
     display: flex;
     justify-content: center;    
     align-items: center;
@@ -29,6 +31,7 @@ h1, h2, h3, h4 {
     font-weight: 600;
     letter-spacing: 1.5px;
     padding: 8px;
+    color: partial.$text-color;
 }
 
 h1 {
@@ -40,7 +43,9 @@ h2 {
 }
 
 h4 {
-    margin-top: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    color: rgb(255, 236, 210);
 }
 
 img{
@@ -49,7 +54,9 @@ img{
 }
 
 p{
+    background-color: black;
     font-family: partial.$paragraph-font;
+    color: partial.$text-color;
     display: flex;
     justify-content: center;
     padding: 5px;

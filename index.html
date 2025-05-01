@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scenarios.js" defer></script>
+</head>
+<body>
+    
+    <!-- div.btn-group>button*3#c${Button $} -->
+    <div class="feedback">
+             <h1>Lær at tage de rigtige beslutninger på nettet.</h1>
+             <h2>Hvilken kategori vil du lære at tage den rigtige beslutning i?</h2>
+        <div id="start"class="btn-group">
+            <button id="c1">Phising</button>
+            <button id="c2">Ransomware</button>
+            <button id="c3">Cookies</button>
+        </div>
+    </div>  
+    <!-- div*3#c$-f.feedback{Feedback c$} -->
+    <div id="c1-f" class="feedback">
+        <img src="img/phising-billede.png" alt="Phising Funny">
+        <h2>Du har valgt Phising</h2>
+        <h3>Du har fået en mail fra postnord. Med teksten: </h3>
+           <p>Du mangler at hente din pakke. Klik på dette link for at se pakkeboks lokation: http//www.pst23nrd232312.com </p>
+           <h4>Hvad gør du?</h4>
+        <div class="btn-group">
+            <button id="c1-1">JEG SLETTER MAILEN</button>
+            <button id="c1-2">JEG IGNORERE MAILEN</button>
+            <button id="c1-3">JEG KLIKKER PÅ LINKET</button>
+        </div>
+    </div>
+    
+    <div id="c2-f" class="feedback">
+        <h2>Du har valgt Ransomware</h2>
+        <h3>Du har fået en mail fra postnord. Med teksten: </h3>
+           <p>Du mangler at hente din pakke. Klik på dette link for at se pakkeboks lokation: http//www.pst23nrd232312.com </p>
+           <h4>Hvad gør du?</h4>        
+                <div class="btn-group">
+                <button id="c2-1">Button 2-1</button>
+                <button id="c2-2">Button 2-2</button>
+                <button id="c2-3">Button 2-3</button>
+        </div>
+    </div>
+
+    <div id="c3-f" class="feedback">
+        <h2>Du har valgt Cookies</h2>
+        <h3>Du har fået en mail fra postnord. Med teksten: </h3>
+           <p>Du mangler at hente din pakke. Klik på dette link for at se pakkeboks lokation: http//www.pst23nrd232312.com </p>
+           <h4>Hvad gør du?</h4>
+        <div class="btn-group">
+            <button id="c3-1">Button 3-1</button>
+            <button id="c3-2">Button 3-2</button>
+            <button id="c3-3">Button 3-3</button>
+        </div>
+    </div>
+</body>
+</html>

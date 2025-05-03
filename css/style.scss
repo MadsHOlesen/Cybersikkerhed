@@ -42,15 +42,20 @@ h2 {
     font-size: 25px ;
 }
 
+h3 {
+   
+}
 h4 {
     font-size: 20px;
     margin-top: 20px;
     color: rgb(255, 236, 210);
 }
 
+
+
 img{
     align-items: center;
-    width: 35vw;
+    width: 35vw;   
 }
 
 p{
@@ -59,7 +64,7 @@ p{
     color: partial.$text-color;
     display: flex;
     justify-content: center;
-    padding: 5px;
+    padding: 10px;
     font-weight: 500;
     margin-top: 10px;
     letter-spacing: 0.8px;

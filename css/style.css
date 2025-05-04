@@ -85,4 +85,42 @@ button {
   border-radius: 10px;
   padding: 10px;
   margin: 10px;
+}
+
+button:hover {
+  color: white;
+}
+
+.svar {
+  margin-bottom: 50px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.svar-k {
+  font-size: 40px;
+  margin-bottom: 50px;
+  color: green;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.svar-f {
+  font-size: 40px;
+  margin-bottom: 50px;
+  color: red;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+a {
+  font-family: "Lucida Console", "Courier New", monospace;
+  background-color: #c3b158;
+  font-size: large;
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: white;
 }/*# sourceMappingURL=style.css.map */

@@ -24,8 +24,7 @@ const checkAnswer = (e) => { // Funktion med en parameter (e)
 
     switch (e.target.id) { // Forholder sig til det klikkede elements id
         case 'c1': 
-            document.querySelector('#c1-f').style.display = 'block'; // Viser elementet med id="c1-f"
-            
+            document.querySelector('#c1-f').style.display = 'block'; // Viser elementet med id="c1-f" 
         break;
         case 'c2': 
             document.querySelector('#c2-f').style.display = 'block';
@@ -33,7 +32,37 @@ const checkAnswer = (e) => { // Funktion med en parameter (e)
         case 'c3':
             document.querySelector('#c3-f').style.display = 'block'; // Viser elementet med id="c3-f"
         break;
+        case 'c1-1':
+            document.querySelector('#c1-1f').style.display = 'block'; //Phising
+            break; 
+        case 'c1-2':
+            document.querySelector('#c1-2f').style.display = 'block'; //Phising
+            break;
+        case 'c1-3':
+            document.querySelector('#c1-3f').style.display = 'block'; //Phising
+            break; 
+        case 'c2-1':
+            document.querySelector('#c2-1f').style.display = 'block'; //Ransomware
+            break; 
+        case 'c2-2':
+            document.querySelector('#c2-2f').style.display = 'block'; //Ransomware
+            break;
+        case 'c2-3':
+            document.querySelector('#c2-3f').style.display = 'block'; //Ransomware
+            break; 
+        case 'c3-1':
+            document.querySelector('#c3-1f').style.display = 'block'; //Tracking-Cookies
+            break; 
+        case 'c3-2':
+            document.querySelector('#c3-2f').style.display = 'block'; //Tracking-Cookies
+            break;
+        case 'c3-3':
+            document.querySelector('#c3-3f').style.display = 'block'; //Tracking-Cookies
+            break; 
         default: console.log("Error"); // Viser error, hvis id ikke findes
+        
+       
+
     }
 }
 

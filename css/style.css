@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -63,6 +64,10 @@ p {
   letter-spacing: 0.8px;
 }
 
+.undgå {
+  margin-top: 30px;
+}
+
 .btn-group {
   display: flex;
   flex-direction: column;
@@ -119,6 +124,7 @@ a {
   padding: 10px;
   text-decoration: none;
   color: black;
+  border: solid 2px;
 }
 
 a:hover {

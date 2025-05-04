@@ -51,7 +51,6 @@ h4 {
 }
 
 
-
 img{
     align-items: center;
     width: 35vw;   
@@ -67,6 +66,10 @@ p{
     font-weight: 500;
     margin-top: 10px;
     letter-spacing: 0.8px;
+}
+
+.undgå {
+    margin-top: 30px;
 }
 
 .btn-group {
@@ -126,6 +129,7 @@ a {
     padding: 10px;
     text-decoration: none;
     color: black;
+    border: solid 2px;
 }
 
 a:hover {

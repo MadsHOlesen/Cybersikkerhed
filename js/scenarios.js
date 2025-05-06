@@ -66,6 +66,13 @@ const checkAnswer = (e) => { // Funktion med en parameter (e)
     }
 }
 
+let zoomTexts = document.querySelectorAll(".svar-k, .svar-f"); // Zoom ind og ud
+
+    setInterval(() => {
+      zoomTexts.forEach((text) => {
+        text.style.transform = text.style.transform === 'scale(1.5)' ? 'scale(1)' : 'scale(1.5)';
+      });
+    }, 500);
 
 /*
 // MANUEL tilføjelse af event listeners

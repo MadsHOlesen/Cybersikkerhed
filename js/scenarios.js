@@ -5,7 +5,7 @@ const btns = document.querySelectorAll('.btn-group button');
 const boxes = document.querySelectorAll('.feedback');
 const choices = [];  
 
-// KNAPPPER
+// KNAPPPER / ARRAY
 const checkAnswer = (e) => { 
     boxes.forEach(box => {
         box.style.display = 'none';

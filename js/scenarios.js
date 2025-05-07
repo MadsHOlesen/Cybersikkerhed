@@ -12,7 +12,7 @@ const checkAnswer = (e) => {
     })
     choices.push(e.target.id); 
     console.log(choices); 
-    localStorage.setItem('Dine svar', choices );
+    localStorage.setItem('Dine svar', choices ); //localStorage 
     switch (e.target.id) {
         case 'c1': 
             document.querySelector('#c1-f').style.display = 'block'; //Start
@@ -55,7 +55,7 @@ const checkAnswer = (e) => {
     }
 }
 
-localStorage.getItem('Dine svar') || 'ingen registrering';
+localStorage.getItem('Dine svar') || 'ingen registrering'; //localStorage 
 
 // ZOOM
 let zoomTexts = document.querySelectorAll(".svar-k, .svar-f"); 

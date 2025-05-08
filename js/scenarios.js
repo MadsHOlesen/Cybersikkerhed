@@ -5,57 +5,75 @@ const btns = document.querySelectorAll('.btn-group button');
 const boxes = document.querySelectorAll('.feedback');
 const choices = [];  
 
-// KNAPPPER / ARRAY
+// KNAPPER
 const checkAnswer = (e) => { 
     boxes.forEach(box => {
         box.style.display = 'none';
-    })
-    choices.push(e.target.id); 
-    console.log(choices); 
-    localStorage.setItem('Dine svar', choices ); //localStorage 
-    switch (e.target.id) {
+    });
+    const valgtId = e.target.id;
+    const valgtTekst = e.target.textContent;
+    
+    choices.push(valgtId);
+    localStorage.setItem('Dine svar', JSON.stringify(choices)); //Gemmer brugerens svar i localStorage
+
+    switch (valgtId) {
         case 'c1': 
-            document.querySelector('#c1-f').style.display = 'block'; //Start
-        break;
+            document.querySelector('#c1-f').style.display = 'block'; // Phising
+            break;
         case 'c2': 
-            document.querySelector('#c2-f').style.display = 'block'; //Start
-        break;
+            document.querySelector('#c2-f').style.display = 'block'; // Ransomware
+            break;
         case 'c3':
-            document.querySelector('#c3-f').style.display = 'block'; //Start
-        break;
-        case 'c1-1':
-            document.querySelector('#c1-1f').style.display = 'block'; //Phising
+            document.querySelector('#c3-f').style.display = 'block'; // Tracking-cookies
+            break;
+
+        // Phishing svar
+         case 'c1-1':
+            visFeedbackMedValg('#c1-1f', valgtTekst); // Korrekt
             break; 
         case 'c1-2':
-            document.querySelector('#c1-2f').style.display = 'block'; //Phising
+            visFeedbackMedValg('#c1-2f', valgtTekst); // Forkert
             break;
         case 'c1-3':
-            document.querySelector('#c1-3f').style.display = 'block'; //Phising
+            visFeedbackMedValg('#c1-3f', valgtTekst); // Korrekt
             break; 
+
+        // Ransomware svar
         case 'c2-1':
-            document.querySelector('#c2-1f').style.display = 'block'; //Ransomware
+            visFeedbackMedValg('#c2-1f', valgtTekst); // Forkert
             break; 
         case 'c2-2':
-            document.querySelector('#c2-2f').style.display = 'block'; //Ransomware
+            visFeedbackMedValg('#c2-2f', valgtTekst); // Korrekt
             break;
         case 'c2-3':
-            document.querySelector('#c2-3f').style.display = 'block'; //Ransomware
+            visFeedbackMedValg('#c2-3f', valgtTekst); // Korrekt
             break; 
+
+        // Tracking-Cookies svar
         case 'c3-1':
-            document.querySelector('#c3-1f').style.display = 'block'; //Tracking-Cookies
+            visFeedbackMedValg('#c3-1f', valgtTekst); // Korrekt
             break; 
         case 'c3-2':
-            document.querySelector('#c3-2f').style.display = 'block'; //Tracking-Cookies
+            visFeedbackMedValg('#c3-2f', valgtTekst); // Korrekt
             break;
         case 'c3-3':
-            document.querySelector('#c3-3f').style.display = 'block'; //Tracking-Cookies
+            visFeedbackMedValg('#c3-3f', valgtTekst); // Forkert
             break; 
-        default: console.log("Error"); 
-        
+            console.log("Ugyldigt valg");
+    }
+};
+
+// Funktion til "du valgte".
+function visFeedbackMedValg(selector, tekst) {
+    const box = document.querySelector(selector);
+    if (box) {
+        box.style.display = 'block';
+        const span = box.querySelector('.valg-tekst');
+        if (span) {
+            span.textContent = tekst;
+        }
     }
 }
-
-localStorage.getItem('Dine svar') || 'ingen registrering'; //localStorage 
 
 // ZOOM
 let zoomTexts = document.querySelectorAll(".svar-k, .svar-f"); 

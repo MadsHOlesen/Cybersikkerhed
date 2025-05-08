@@ -71,6 +71,7 @@ p {
 
 .undgå {
   margin-top: 30px;
+  text-shadow: 0.5px 0.5px 0px orange, -0.5px -0.5px 0px orange, 0.5px -0.5px 0px orange, -0.5px 0.5px 0px orange;
 }
 
 .btn-group {
@@ -121,6 +122,15 @@ button:hover {
   font-family: "Trebuchet MS", sans-serif;
 }
 
+.valg-tekst {
+  color: wheat;
+  text-shadow: 0.5px 0.5px 0px orange, -0.5px -0.5px 0px orange, 0.5px -0.5px 0px orange, -0.5px 0.5px 0px orange;
+}
+
+.svarvalg {
+  color: wheat;
+}
+
 a {
   font-family: "Lucida Console", "Courier New", monospace;
   background-color: #c3b158;
@@ -155,9 +165,9 @@ a:hover {
 }
 @media (max-width: 374px) {
   p {
-    font-size: 14px;
+    font-size: 15px;
   }
   button {
-    font-size: 14px;
+    font-size: 15px;
   }
 }/*# sourceMappingURL=style.css.map */

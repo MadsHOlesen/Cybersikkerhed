@@ -43,6 +43,7 @@ h1 {
 
 h2 {
     font-size: 25px ;
+    
 }
 
 
@@ -76,6 +77,11 @@ p{
 
 .undgå {
     margin-top: 30px;
+    text-shadow: // stroke for lettere læselighed - komplementær farve til baggrund
+    0.5px 0.5px 0px orange,   
+    -0.5px -0.5px 0px orange, 
+    0.5px -0.5px 0px orange,  
+    -0.5px 0.5px 0px orange;  
 }
 
 .btn-group {
@@ -126,6 +132,19 @@ button:hover{
     font-family: partial.$heading-font;
 }
 
+.valg-tekst {
+    color: wheat;
+    text-shadow: // stroke for lettere læselighed - komplementær farve til baggrund
+    0.5px 0.5px 0px orange,   
+    -0.5px -0.5px 0px orange, 
+    0.5px -0.5px 0px orange,  
+    -0.5px 0.5px 0px orange;  
+}
+
+
+.svarvalg {
+    color: wheat;
+}
 
 a {
     font-family: partial.$paragraph-font;
